@@ -1,0 +1,78 @@
+
+<html>
+<meta charset="UTF-8">
+
+<input onclick="location.reload()" style="background: #d01a1a; color: white; cursor: pointer; position: absolute; right: 0px; z-index: 8;" type="button" value="Yayini Yenile" />
+
+<style type="text/css">
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    </style>
+
+    <script type='text/javascript'>
+    cookieChoices = {};
+    </script>
+    
+
+
+    <!----stream----->
+
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/clappr/latest/clappr.min.js"></script>
+<div id="player"></div>
+<script type='text/javascript'>
+
+var player = new Clappr.Player({
+source: 'https://patlak.trgoals430.xyz/yayinstar.m3u8',
+parentId: '#player',
+preload: 'auto',
+autoPlay: 'false',
+width: '100%',
+height: '100%',
+position: 'top-right',
+watermark: 'https://1.bp.blogspot.com/--tZ4xQROe8c/X8IpMA2I64I/AAAAAAAAAw4/HSy-HEmx_gkjx-PfBuAdWai_OLDtL2FdgCLcBGAsYHQ/s0/katil%2B%25281%2529.png',
+poster: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxZsuCg5nLqv6qZi0XjmUzosN-Cx5cQ4Kjuj_9avtuZ7aXPZoy_pFuGUU_Vlz2otBSIxkS9HMXDUnkDa78zwYnH7PvJsaOioWKhWY2vc285vRv8CpcuInlD4iGzpM_kfHA8zEyej9V_rtvwlKvkCBzqLkpGxWsjNgXAo-QMnkmEh8k0SU0SWJZaKkj1aOR/s1600/load.gif',
+watermarkLink:'https://t.me/taraftarium24x'
+
+});
+</script>
+
+    
+    <!-- right click -->
+    <SCRIPT LANGUAGE="Javascript">
+    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+    var EnableRightClick = 0;
+    if (isNS)
+        document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
+    function mischandler() {
+        if (EnableRightClick == 1) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    function mousehandler(e) {
+        if (EnableRightClick == 1) {
+            return true;
+        }
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if ((eventbutton == 2) || (eventbutton == 3))
+            return false;
+    }
+    function keyhandler(e) {
+        var myevent = (isNS) ? e : window.event;
+        if (myevent.keyCode == 96)
+            EnableRightClick = 1;
+        return;
+    }
+    document.oncontextmenu = mischandler;
+    document.onkeypress = keyhandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    </script>
+    <!-- /right click -->
+ </html>
